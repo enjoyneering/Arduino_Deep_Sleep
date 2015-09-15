@@ -136,7 +136,7 @@ void ATtiny85_sleep()
     Sleeps intervals: WDTO_15MS, WDTO_30MS, WDTO_60MS, WDTO_120MS, WDTO_250MS,
                       WDTO_500MS, WDTO_1S, WDTO_2S, WDTO_4S, WDTO_8S
     
-    NOTE: runs from internal 128kHz clock and continues to work during the
+    NOTE: MCU runs from internal 128kHz clock and continues to work during the
           deepest sleep modes to provide a wake up source.
 */
 /**************************************************************************/
