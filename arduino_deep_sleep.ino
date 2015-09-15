@@ -2,8 +2,8 @@
 /*
   Arduino_deep_sleep is an example of the proper way to put ANY arduino to sleep
   
-  Puts arduino in deep sleep for 30 sec. Wakes it up and turns on LED connected
-  to the pin 0. After put arduino back to sleep
+  Puts arduino in to deep sleep for 30 sec. Wakes it up and turns on LED
+  connected to the pin 0. After put arduino back to sleep
 
   written by enjoyneering79
 
