@@ -126,8 +126,7 @@ void ATtiny85_sleep()
                                          (so the sleep is possible), goes to sleep, wakes-up from sleep after an
                                          interrupt (if interrupts are enabled) or WDT timed out (if enabled) and
                                          clears the SE (Sleep Enable) bit afterwards).
-                                         the sketch will continue from this point after interrupt or WDT timed out
-                                       */
+                                         the sketch will continue from this point after interrupt or WDT timed out*/
 }
 
 /**************************************************************************/
@@ -145,7 +144,7 @@ void setup_watchdog(byte sleep_time)
 {
   wdt_enable(sleep_time);
   WDTCR |= _BV(WDIE);     /*enable interrupts instead of MCU reset when watchdog is timed out
-                            used for wake-up MCU from power-down */
+                            used for wake-up MCU from power-down*/
 }
 
 /**************************************************************************/
