@@ -64,7 +64,7 @@ void all_pins_input()
 void setup()
 {
   pinMode(pinLed,OUTPUT);
-  setup_watchdog(WDTO_8S); //approximately 8sec. of sleep
+  setup_watchdog(WDTO_8S); //approximately 8 sec. of sleep
 }
 
 /**************************************************************************/
