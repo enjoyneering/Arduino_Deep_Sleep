@@ -9,11 +9,11 @@
 
 */
 /*****************************************************************************/
-#include <avr/sleep.h>     // AVR MCU power management
-#include <avr/power.h>     // disable/anable AVR MCU peripheries (Analog Comparator, ADC, USI, Timers/Counters)
-#include <avr/wdt.h>       // AVR MCU watchdog timer
-#include <avr/io.h>        // includes the apropriate AVR MCU IO definitions
-#include <avr/interrupt.h> // manipulation of the interrupt flags
+#include <avr/sleep.h>     //AVR MCU power management
+#include <avr/power.h>     //disable/anable AVR MCU peripheries (Analog Comparator, ADC, USI, Timers/Counters)
+#include <avr/wdt.h>       //AVR MCU watchdog timer
+#include <avr/io.h>        //includes the apropriate AVR MCU IO definitions
+#include <avr/interrupt.h> //manipulation of the interrupt flags
 
 /**************************************************************************/
 /*
