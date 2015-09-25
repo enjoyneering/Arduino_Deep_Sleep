@@ -121,7 +121,6 @@ void ATtiny85_sleep()
   power_usi_disable();                 //disable the Universal Serial Interface module.
   */
   set_sleep_mode(SLEEP_MODE_PWR_DOWN); //set the sleep type
-  sleep_bod_disable();                 //disable brown out detection during the sleep. saves more power
   sleep_mode();                        /*system stops & sleeps here (automatically sets the SE (Sleep Enable) bit
                                          (so the sleep is possible), goes to sleep, wakes-up from sleep after an
                                          interrupt (if interrupts are enabled) or WDT timed out (if enabled) and
