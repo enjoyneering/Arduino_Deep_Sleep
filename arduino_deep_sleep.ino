@@ -74,7 +74,7 @@ void setup()
 /**************************************************************************/
 void loop()
 {
-  while (watchdog_counter >= 4) //wait for watchdog counter reched the limit (WDTO_8S * 4 = 32sec.)
+  while (watchdog_counter < 4) //wait for watchdog counter reched the limit (WDTO_8S * 4 = 32sec.)
   {
     ATtiny85_sleep();
   }
