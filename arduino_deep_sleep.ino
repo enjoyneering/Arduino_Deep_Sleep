@@ -79,8 +79,8 @@ void loop()
     ATtiny85_sleep();
   }
   
-  power_all_enable();       //enable all peripheries (timer0, timer1, Universal Serial Interface, ADC)
   watchdog_counter = 0;     //reset watchdog_counter
+  power_all_enable();       //enable all peripheries (timer0, timer1, Universal Serial Interface, ADC)
   /*
   power_adc_enable();       //enable ADC
   power_timer0_enable();    //enable Timer0
@@ -122,9 +122,9 @@ void ATtiny85_sleep()
   */
   set_sleep_mode(SLEEP_MODE_PWR_DOWN); //set the sleep type
   sleep_bod_disable();                 //disable brown out detection during the sleep. saves more power
-  sleep_mode();                        /*system stops & sleeps here (automatically sets SE (Sleep Enable) bit
+  sleep_mode();                        /*system stops & sleeps here (automatically sets the SE (Sleep Enable) bit
                                          (so the sleep is possible), goes to sleep, wakes-up from sleep after an
-                                         interrupt (if interrupts are enabled) or WDT is timed out (if enabled) and
+                                         interrupt (if interrupts are enabled) or WDT timed out (if enabled) and
                                          clears the SE (Sleep Enable) bit afterwards).
                                          the sketch will continue from this point after interrupt or WDT timed out*/
 }
