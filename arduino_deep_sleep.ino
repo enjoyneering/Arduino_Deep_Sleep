@@ -74,28 +74,28 @@ void setup()
 /**************************************************************************/
 void loop()
 {
-  ATtiny85_sleep();
-
-  if (watchdog_counter >= 4)  //wait for watchdog counter reched the limit (WDTO_8S * 4 = 32sec.)
+  while (watchdog_counter >= 4) //wait for watchdog counter reched the limit (WDTO_8S * 4 = 32sec.)
   {
-    watchdog_counter = 0;     //reset watchdog_counter
-
-    power_all_enable();       //enable all peripheries (timer0, timer1, Universal Serial Interface, ADC)
-    /*
-    power_adc_enable();       //enable ADC
-    power_timer0_enable();    //enable Timer0
-    power_timer1_enable();    //enable Timer1
-    power_usi_enable();       //enable the Universal Serial Interface module
-    */
-    delay(5); //to settle down ADC and peripheries
-
-    all_pins_output();
-    digitalWrite(pinLed,HIGH);  //led blink
-    delay(3000);
-    digitalWrite(pinLed,LOW);
-
-    all_pins_output();
+    ATtiny85_sleep();
   }
+  
+  sleep_disable();          //system continues execution here when watchdog is timed out
+  watchdog_counter = 0;     //reset watchdog_counter
+  power_all_enable();       //enable all peripheries (timer0, timer1, Universal Serial Interface, ADC)
+  /*
+  power_adc_enable();       //enable ADC
+  power_timer0_enable();    //enable Timer0
+  power_timer1_enable();    //enable Timer1
+  power_usi_enable();       //enable the Universal Serial Interface module
+  */
+  delay(5); //to settle down ADC and peripheries
+
+  all_pins_output();
+  digitalWrite(pinLed,HIGH);  //led blink
+  delay(3000);
+  digitalWrite(pinLed,LOW);
+
+  all_pins_output();
 }
 
 /**************************************************************************/
