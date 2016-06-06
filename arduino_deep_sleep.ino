@@ -131,7 +131,7 @@ void loop()
 
     NOTE: There are 6 different sleeps modes:
           * SLEEP_MODE_IDLE..........The least power savings state. CPU stopped but Analog
-                                     ccomparator, ADC, USI, Timer/Counter, Watchdog (if enabled),
+                                     comparator, ADC, USI, Timer/Counter, Watchdog (if enabled),
                                      & the interrupt system continues operating. (by default in "sleep.h")
           * SLEEP_MODE_ADC...........ADC Noise Reduction. CPU stopped but the ADC, the external
                                      interrupts, & the Watchdog (if enabled) continue operating.
