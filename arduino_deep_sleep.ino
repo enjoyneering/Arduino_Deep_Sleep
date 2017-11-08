@@ -1,6 +1,7 @@
 /*****************************************************************************/
 /*
-  Arduino_deep_sleep is an example of the proper way to put ANY Arduino to sleep
+  Arduino_deep_sleep is an example of the proper way to put any AVR based
+  Arduino in to sleep
   
   Sketch puts Arduino in to the deep sleep for ~30 sec. Wakes it up, turns on/off
   the LED connected to the pin0 & puts Arduino back to sleep.
