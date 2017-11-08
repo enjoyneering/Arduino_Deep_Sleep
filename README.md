@@ -1,5 +1,5 @@
 # Arduino_Deep_Sleep
-An example of the proper and most advanced way to put ANY AVR based Arduino boards to sleep
+An example of the proper and most advanced way to put any AVR based Arduino boards in to sleep
 
 This example puts ATtiny85 in to deep sleep for 30 sec. Wakes it up and turns on LED connected to the pin 0 and puts arduino back to sleep.
 
