@@ -24,9 +24,9 @@
     variables
 */
 /**************************************************************************/
-#if defineddefined(__AVR_ATmega328P__) || defined(__AVR_ATmega168p__)
+#if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168p__)
 byte led = LED_BUILTIN;
-#elif (__AVR_ATtiny85__) || defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny25__)
+#elif defined(__AVR_ATtiny85__) || defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny25__)
 byte led = 0;
 #endif
 
