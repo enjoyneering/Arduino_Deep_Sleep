@@ -242,7 +242,7 @@ void arduino_sleep()
     - Watchdog is a timer, if you donʼt reset it regularly it will time-out.
       Just call "wdt_reset()" before timer expires, otherwise a watchdog
       will reset MCU.
-    - Macros _BV(bit)=(1 << (bit)) converts bit number into a byte value.
+    - Macro _BV(bit)=(1 << (bit)) converts bit number into a byte value.
 */
 /**************************************************************************/
 void setup_watchdog(byte sleep_time)
