@@ -137,7 +137,7 @@ void loop()
       *  SLEEP_MODE_PWR_DOWN    - the most power savings: all oscillators are stopped, only an External Reset, Watchdog Reset,
                                   Brown-out Reset, USI start condition interupt, an external level interrupt on INT0 or a pin
                                   change interrupt can wake up the MCU.
-    - anothe useful fitures
+    - another useful functions:
       *  sleep_enable()         - enable sleep, set Sleep Enable (SE) bit
       *  sleep_cpu()            - system stops & sleeps here, but doesn't automatically sets/clears Sleep Enable (SE) bit like sleep_mode()
       *  sleep_disable()        - disable sleep, clears Sleep Enable (SE) bit
