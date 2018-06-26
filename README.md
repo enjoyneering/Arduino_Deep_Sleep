@@ -1,6 +1,5 @@
 # Arduino_Deep_Sleep
-An example of the proper and most advanced way to put any AVR based Arduino boards in to sleep
 
-This example puts ATtiny85 in to deep sleep for 30 sec. Wakes it up and turns on LED connected to the pin 0 and puts arduino back to sleep.
+An Arduino example of the proper and most advanced way to put any AVR MCU into sleep
 
-NOTE: Average ATtiny85 consumption in deep sleep mode is about 3 microamps at 3.3 volt.
+This example puts AVR MCU in deep sleep for 30 seconds. Wakes it up, turns on/off LED and returns Arduino back to sleep. Average ATtiny85 consumption in deep sleep mode, achieved by this sketch, is about 3 microamperes at 3.3 volt.
