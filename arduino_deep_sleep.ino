@@ -237,7 +237,7 @@ void arduino_sleep()
       and low by the system if interrupt happend.
     - MCUSR is MCU Status Register, it provides information on which reset
       source caused an MCU reset. MCUSR bit 3 is WDRF Watchdog System Reset
-      Flag. his bit is set if a Watchdog System Reset occurs. The bit is
+      Flag. This bit is set if a Watchdog System Reset occurs. The bit is
       reset by a Power-on Reset, or by writing a logic zero to the flag.
     - Watchdog is a timer, if you donʼt reset it regularly it will time-out.
       Just call "wdt_reset()" before timer expires, otherwise a watchdog
