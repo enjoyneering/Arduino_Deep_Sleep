@@ -169,7 +169,7 @@ void arduino_sleep()
                                          if interrupt is enabled or WDT enabled & timed out, than clears the SE bit.
                                        */
 
-  //NOTE: sketch will continue from this point after interrupt or timed out WDT
+  /*** NOTE: sketch will continue from this point after sleep ***/
 }
 
 /**************************************************************************/
