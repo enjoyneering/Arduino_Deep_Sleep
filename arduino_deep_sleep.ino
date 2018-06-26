@@ -249,9 +249,9 @@ void setup_watchdog(byte sleep_time)
 {
   cli();                           //disable interrupts for time critical operations below
 
-  MCUSR &= ~_BV(WDRF);             //must be cleared first, to clear WDE
-
   wdt_enable(sleep_time);          //set WDCE, WDE change prescaler bits
+  
+  MCUSR &= ~_BV(WDRF);             //must be cleared first, to clear WDE
 
   #if defined(__AVR_ATtiny25__) || defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny85__) || defined(__AVR_ATtiny87__) || defined(__AVR_ATtiny167__)
   WDTCR  |= _BV(WDCE) & ~_BV(WDE); //set WDCE first, clear WDE second, changes have to be done within 4-cycles
