@@ -11,4 +11,4 @@ This example puts AVR MCU in deep sleep for 30 seconds. Wakes it up, turns on/of
 [stars]:         https://img.shields.io/github/stars/enjoyneering/Arduino_Deep_Sleep.svg
 [stargazers]:    https://github.com/enjoyneering/Arduino_Deep_Sleep/stargazer
 [GitHub issues]: https://img.shields.io/github/issues/enjoyneering/Arduino_Deep_Sleep.svg
-[issues]:        https://GitHub.com/enjoyneering/Arduino_Deep_Sleep/issues/
+[issues]:        https://github.com/enjoyneering/Arduino_Deep_Sleep/issues/
