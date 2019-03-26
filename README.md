@@ -1,4 +1,5 @@
 [![license-badge][]][license] [![stars][]][stargazers]
+[![GitHub issues](https://img.shields.io/github/issues/enjoyneering/Arduino_Deep_Sleep.svg)](https://GitHub.com/enjoyneering/Arduino_Deep_Sleep/issues/)
 
 # Arduino_Deep_Sleep
 
