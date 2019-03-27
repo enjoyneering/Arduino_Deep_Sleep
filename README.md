@@ -1,4 +1,4 @@
-[![license-badge][]][license] [![stars][]][stargazers] [![hit-count][]][count] [![githubissues][]][issues]
+[![license-badge][]][license] [![stars][]][stargazers] [![hit-count][]][count] [![github-issues][]][issues]
 
 # Arduino_Deep_Sleep
 
