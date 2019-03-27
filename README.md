@@ -1,4 +1,4 @@
-[![license-badge][]][license] [![stars][]][stargazers] [![GitHub issues][]][issues]
+[![license-badge][]][license] [![stars][]][stargazers] [![hit-count][]][count] [![GitHub issues][]][issues]
 
 # Arduino_Deep_Sleep
 
@@ -10,5 +10,7 @@ This example puts AVR MCU in deep sleep for 30 seconds. Wakes it up, turns on/of
 [license]:       https://choosealicense.com/licenses/gpl-3.0/
 [stars]:         https://img.shields.io/github/stars/enjoyneering/Arduino_Deep_Sleep.svg
 [stargazers]:    https://github.com/enjoyneering/Arduino_Deep_Sleep/stargazer
+[hit-count]:     http://hits.dwyl.io/enjoyneering/Arduino_Deep_Sleep.svg
+[count]:         http://hits.dwyl.io/enjoyneering/Arduino_Deep_Sleep/badges
 [GitHub issues]: https://img.shields.io/github/issues/enjoyneering/Arduino_Deep_Sleep.svg
 [issues]:        https://github.com/enjoyneering/Arduino_Deep_Sleep/issues/
