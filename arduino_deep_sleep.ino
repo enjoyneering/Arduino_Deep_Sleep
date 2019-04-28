@@ -38,17 +38,13 @@ volatile byte watchdogCounter = 0;
     
     Sets all pins as output, to prevent the MCU from waking up from a
     random noise signal during sleep, use if needed
-    
-    NOTE:
-    - INPUT_PULLUP connects internal 20k..30k pullups resistors & increase
-      consumption by 1.25uA
 */
 /**************************************************************************/
 void all_pins_output()
 {
   for (byte pin = 0; pin < 5; pin++) //ATtiny85 has 5 pins
   {
-    pinMode(pin, INPUT_PULLUP);
+    pinMode(pin, OUTPUT);
   }
 }
 
@@ -57,6 +53,10 @@ void all_pins_output()
     all_pins_input()
 
     Sets back all pins as input
+    
+    NOTE:
+    - INPUT_PULLUP connects internal 20k..30k pullups resistors & increase
+      consumption by 1.25uA
 */
 /**************************************************************************/
 void all_pins_input()
@@ -64,6 +64,7 @@ void all_pins_input()
   for (byte pin = 0; pin < 5; pin++) //ATtiny85 has 5 pins
   {
     pinMode(pin, INPUT);
+    //pinMode(pin, INPUT_PULLUP);
   }
 }
 
