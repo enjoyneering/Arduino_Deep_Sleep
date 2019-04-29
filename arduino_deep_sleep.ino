@@ -190,17 +190,17 @@ void arduino_sleep()
       WDIF, WDIE, WDP3, WDCE, WDE, WDP2, WDP1, WDP0
     - Following  prescaler 4 bits determine how long the timer will count
       for before resetting:
-      WDP  WDP  WDP  WDP  Time-out  Macro
-      0    0    0    0    16ms      WDTO_15MS
-      0    0    0    1    32ms      WDTO_30MS
-      0    0    1    0    64ms      WDTO_60MS
-      0    0    1    1    125ms     WDTO_120MS
-      0    1    0    0    250ms     WDTO_250MS
-      0    1    0    1    500ms     WDTO_500MS
-      0    1    1    0    1000ms    WDTO_1S
-      0    1    1    1    2000ms    WDTO_2S
-      1    0    0    0    4000ms    WDTO_4S
-      1    0    0    1    8000ms    WDTO_8S
+      WDP3  WDP2  WDP1  WDP0  Time-out  Macro
+      0     0     0     0     16ms      WDTO_15MS
+      0     0     0     1     32ms      WDTO_30MS
+      0     0     1     0     64ms      WDTO_60MS
+      0     0     1     1     125ms     WDTO_120MS
+      0     1     0     0     250ms     WDTO_250MS
+      0     1     0     1     500ms     WDTO_500MS
+      0     1     1     0     1000ms    WDTO_1S
+      0     1     1     1     2000ms    WDTO_2S
+      1     0     0     0     4000ms    WDTO_4S
+      1     0     0     1     8000ms    WDTO_8S
     - WDE bit Watchdog System Reset Enable, it is overridden by WDRF bit
       in MCUSR/MCU Status Register. This means that WDE is always set
       when WDRF is set. To clear WDE, WDRF must be cleared first. This
